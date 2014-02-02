@@ -1,0 +1,24 @@
+<div>
+	<div ng-include="'views/mathStatusbar.html'"></div>
+	<div ng-include="'views/mathOptions.html'"></div>
+	<div ng-include="'views/mathScoreboard.html'"></div>
+	<div class="col-sm-4 col-sm-offset-4">
+		<div class="center-block">
+			<span class="huge">
+				|{{exercises.exerciseTable[exercises.counter].firstNumber}}{{exercises.exerciseTable[exercises.counter].operand}}{{exercises.exerciseTable[exercises.counter].secondNumber}}|
+			</span>
+			<form action="" class="">
+				<input type="number" class="form-control huge" ng-model="answer.answer">
+			</form>
+			<br>
+			<button type="button" class="btn btn-primary" ng-click="startExercises()" id="startButton">Start</button>
+			<button type="button" class="btn btn-warning" ng-click="pauseExercises()" id="pauseButton">Pauze</button>
+			<button type="button" class="btn btn-danger"  ng-click="resetExercises(options.numberOfQuestions, options.operands)" id="resetButton">Reset</button>
+			<br>
+			<br>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" ng-style = 'visuals.progressbarStyle'>
+				</div>
+			</div>
+		</div>
+	</div>

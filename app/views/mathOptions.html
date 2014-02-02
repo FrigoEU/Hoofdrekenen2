@@ -1,0 +1,28 @@
+<div class="options" ng-controller="MathOptionsCtrl" ng-hide="visuals.hideOptions">
+	<!-- <form class="form-horizontal" role="form"> -->
+	<!-- <div class="panel"> -->
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+				<div class="input-group">
+					<span class="input-group-addon">#Vragen?</span>
+					<input type="number" id="numberOfQuestions" class="form-control" value="100" ng-model="options.numberOfQuestions">					
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">#Seconden?</span>
+					<input type="number" id="numberOfSeconds" class="form-control" value="7" ng-model="options.numberOfSeconds">					
+				</div>
+				<h3>
+					<input type="checkbox" name="operands" id="multiplication" ng-model="options.operands.multiplication"> 
+					<span class="">Vermenigvuldigen?</span>
+										
+				</h3>
+				<h3>
+					<input type="checkbox" name="operands" id="division" ng-model="options.operands.division">
+					<span class="">Delen?</span>
+				</h3>
+			</div>
+		</div>
+	<!-- </div> -->
+	<!-- </form> -->
+</div>

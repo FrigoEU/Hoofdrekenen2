@@ -1,0 +1,22 @@
+<div class="scoreboard" ng-controller="MathScoreboardCtrl" ng-hide="visuals.hideScoreboard">
+	<div class="row">
+		<div class="huge col-sm-3">
+			67%
+		</div>
+		<div class="col-sm-1">
+		<div>
+			<span class="glyphicon glyphicon-ok"></span>
+			<input type="checkbox" class="" ng-model="visuals.showAnswers.correct">
+		</div>
+		<div>
+			<span class="glyphicon glyphicon-remove"></span>
+			<input type="checkbox" class="" ng-model="visuals.showAnswers.wrong">
+		</div>
+		</div>
+		<div class="col-sm-2">
+			<ul ng-repeat="exercise in exercises.exerciseTable | answers: visuals.showAnswers">
+				<li>{{exercise.firstNumber}}{{exercise.operand}}{{exercise.secondNumber}} = {{exercise.answerStudent}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
