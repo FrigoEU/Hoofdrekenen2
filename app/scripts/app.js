@@ -13,3 +13,7 @@ angular.module('hoofdrekenenApp', [
         redirectTo: '/'
       });
   });
+
+document.addEventListener('deviceready', function() {
+    angular.bootstrap( document, ['myApp']);
+});
